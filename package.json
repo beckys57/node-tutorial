@@ -1,0 +1,25 @@
+{
+  "name": "how-to",
+  "version": "1.0.1",
+  "description": "how-to for npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beckys57/node-tutorial.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "becky smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beckys57/node-tutorial/issues"
+  },
+  "homepage": "https://github.com/beckys57/node-tutorial#readme",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  }
+}
