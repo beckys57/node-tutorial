@@ -1,0 +1,71 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/home/ubuntu/.nvm/v0.10.35/bin/npm', 'publish' ]
+2 info using npm@3.3.6
+3 info using node@v0.10.35
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/ubuntu/workspace/node_files',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/ubuntu/.npm/how-to/1.0.1/package.tgz not in flight; packing
+9 info lifecycle how-to@1.0.1~prepublish: how-to@1.0.1
+10 silly lifecycle how-to@1.0.1~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/home/ubuntu/.npm/how-to/1.0.1/package.tgz',
+11 verbose tar pack   '/home/ubuntu/workspace/node_files' ]
+12 verbose tarball /home/ubuntu/.npm/how-to/1.0.1/package.tgz
+13 verbose folder /home/ubuntu/workspace/node_files
+14 verbose addLocalTarball adding from inside cache /home/ubuntu/.npm/how-to/1.0.1/package.tgz
+15 silly cache afterAdd how-to@1.0.1
+16 verbose afterAdd /home/ubuntu/.npm/how-to/1.0.1/package/package.json not in flight; writing
+17 verbose afterAdd /home/ubuntu/.npm/how-to/1.0.1/package/package.json written
+18 silly publish { name: 'how-to',
+18 silly publish   version: '1.0.1',
+18 silly publish   description: 'how-to for npm',
+18 silly publish   main: 'index.js',
+18 silly publish   scripts: { test: 'node test.js' },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/beckys57/node-tutorial.git' },
+18 silly publish   keywords: [ 'node' ],
+18 silly publish   author: { name: 'becky smith' },
+18 silly publish   license: 'ISC',
+18 silly publish   bugs: { url: 'https://github.com/beckys57/node-tutorial/issues' },
+18 silly publish   homepage: 'https://github.com/beckys57/node-tutorial#readme',
+18 silly publish   dependencies: { '@linclark/pkg': '^1.0.2' },
+18 silly publish   readme: 'To order your eggs, please see test.js, and orderEggs',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: 'f07f8200e5e99cc313ab177eba25eaaff0fb85c9',
+18 silly publish   _id: 'how-to@1.0.1',
+18 silly publish   _shasum: 'f9b529b8b2b16987d80d9aed4ac9f908e8a5f75c',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name how-to
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry http://localhost:15443/
+23 silly mapToRegistry uri http://localhost:15443/how-to
+24 verbose publish registryBase http://localhost:15443/
+25 silly publish uploading /home/ubuntu/.npm/how-to/1.0.1/package.tgz
+26 verbose stack Error: auth required for publishing
+26 verbose stack     at CachingRegistryClient.publish (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+26 verbose stack     at /home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/lib/publish.js:137:14
+26 verbose stack     at mapToRegistry (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/lib/utils/map-to-registry.js:55:3)
+26 verbose stack     at publish_ (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/lib/publish.js:106:3)
+26 verbose stack     at Array.1 (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+26 verbose stack     at LOOP (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+26 verbose stack     at LOOP (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+26 verbose stack     at chain (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+26 verbose stack     at /home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/lib/publish.js:72:5
+26 verbose stack     at RES (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+27 verbose cwd /home/ubuntu/workspace/node_files
+28 error Linux 3.14.13-c9
+29 error argv "node" "/home/ubuntu/.nvm/v0.10.35/bin/npm" "publish"
+30 error node v0.10.35
+31 error npm  v3.3.6
+32 error code ENEEDAUTH
+33 error need auth auth required for publishing
+33 error need auth You need to authorize this machine using `npm adduser`
+34 verbose exit [ 1, true ]
